@@ -90,5 +90,12 @@ dev.off()
 #meaning the fist and second element having a small positive correlation 
 #doesn't actually hold any significance.
 
+#Extra credit 
+TreeK2 <- pbtree(n=100)
+X <- fastBM(TreeK2, nsim=2)
+pdf("extra credit.pdf")
+phylomorphospace(TreeK2, X, xlab="element1", ylab="element2")
+dev.off()
+
 
 
