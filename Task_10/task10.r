@@ -39,9 +39,9 @@ SRbranchlength <-cor(speciationrate, Avgbranchlength)
 ?Ntip
 trees[17]
 TreeK<- trees[[17]]
-pdf("Largest Tree.pdf")
+pdf("Question 7 Largest Tree.pdf")
 plot(TreeK)
-dev.off
+dev.off()
 rates <- vector()
 traits <- list()
 
@@ -77,7 +77,7 @@ element1<-sapply(traits,"[[",1)
 element2<-sapply(traits,"[[",2)
 traitMat<- cbind(element1,element2)
 element1and2cor <- cor(element1,element2)
-pdf("First element vs Second element of Traits.pdf")
+pdf("Q10 First element vs Second element of Traits.pdf")
 plot(element1,element2)
 dev.off()
 #There is a positive correlation of 0.2663275 between element 1 and element 2 of the traits.
